@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Sjcj {
     public static void main(String[] args) {
+        //随机生成0~9数字  10+1就是生成1~11数字
         int random=(int)(Math.random()*10);
         System.out.println("随机幸运数字是："+random);
         System.out.println("请输入4位会员号：");
