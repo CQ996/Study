@@ -16,8 +16,8 @@ public class Demo {
                     }*/
             Scanner input=new Scanner(System.in);
             System.out.println("请问作业做完了吗？y/n：");
-            String zy=input.next();
-            if (zy.equals("y")){
+            char zy=input.next().charAt(0);
+            if (zy=='y'){
             System.out.println("可以去玩游戏");
             }else{
             System.out.println("快去做作业");
