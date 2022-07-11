@@ -26,9 +26,9 @@ public class Tfgz {
             System.out.print("扣除费用："+(zfy*seven)+"元，实际退费金额"+(zfy-zfy*seven)+"元");
         }else if (day>=4) {
             System.out.print("扣除费用："+(zfy*four)+"元，实际退费金额"+(zfy-zfy*four)+"元");
-        } else if (day>=1) {
+        } else if (day>1) {
             System.out.print("扣除费用："+(zfy*one)+"元，实际退费金额"+(zfy-zfy*one)+"元");
-        } else if (day<1) {
+        } else if (day<=1) {
             System.out.print("扣除费用："+(zfy*zero)+"元，实际退费金额"+(zfy-zfy*zero)+"元");
         }
 
