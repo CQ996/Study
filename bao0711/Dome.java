@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Dome {
     public static void main(String[] args) {
-/*        System.out.println("行驶第1公里");
+        System.out.println("行驶第1公里");
         //重复做的一件事情可以使用循环结构
         int i=1;
         while (i<=100){
             System.out.println("行驶第"+i+"公里");
             i++;//跑完一次加1公里
-        }*/
+        }
 
         /*Scanner input=new Scanner(System.in);
         System.out.println("是否正常营业");
