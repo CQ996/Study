@@ -19,7 +19,7 @@ public class Dome8 {
         System.out.println("4、注销");
         System.out.println("*****************************");
         Scanner input = new Scanner(System.in);
-            String answer="y";
+            String answer;//定义变量 answer
             do {
                 answer="n";
                     System.out.println("请选择，输入数字：");
