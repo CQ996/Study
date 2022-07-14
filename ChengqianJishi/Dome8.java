@@ -19,11 +19,12 @@ public class Dome8 {
         System.out.println("4、注销");
         System.out.println("*****************************");
         Scanner input = new Scanner(System.in);
-        System.out.println("请选择，输入数字：");
-
+            String answer="y";
             do {
+                answer="n";
+                    System.out.println("请选择，输入数字：");
                 if (input.hasNextInt()) {
-                int num = input.nextInt();
+                    int num = input.nextInt();
                 switch (num){
                     case 1:
                         System.out.println("执行客户信息管理\n程序结束！");
@@ -38,6 +39,7 @@ public class Dome8 {
                         System.out.println("执行注销\n程序结束！");
                         break;
                     default:
+                        answer="y";
                         System.out.println("您的输入有误，请重新输入！");
                 }
                 /*if (num==1){
@@ -56,10 +58,11 @@ public class Dome8 {
                     System.out.println("您的输入有误，请重新输入！");
                 }*/
             }else {
-                    String han=input.next();
+                    answer="y";
                     System.out.println("您输入的不是数字，请重新输入！");
+                    String han=input.next();//这行代码可以接受字符串，起暂停作用
                 }
-            }while(true);
+            }while(answer.equals("y"));
 
 
     }
