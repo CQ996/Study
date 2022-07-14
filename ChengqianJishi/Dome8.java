@@ -20,11 +20,11 @@ public class Dome8 {
         System.out.println("*****************************");
         Scanner input = new Scanner(System.in);
         System.out.println("请选择，输入数字：");
-            int num;
+
             do {
                 if (input.hasNextInt()) {
-                 num = input.nextInt();
-                /*switch (num){
+                int num = input.nextInt();
+                switch (num){
                     case 1:
                         System.out.println("执行客户信息管理\n程序结束！");
                         break;
@@ -39,8 +39,8 @@ public class Dome8 {
                         break;
                     default:
                         System.out.println("您的输入有误，请重新输入！");
-                }*/
-                if (num==1){
+                }
+                /*if (num==1){
                     System.out.println("执行客户信息管理\n程序结束！");
                     break;
                 } else if (num==2) {
@@ -54,12 +54,12 @@ public class Dome8 {
                     break;
                 } else {
                     System.out.println("您的输入有误，请重新输入！");
-                }
+                }*/
             }else {
                     String han=input.next();
                     System.out.println("您输入的不是数字，请重新输入！");
                 }
-            }while(2>1);
+            }while(true);
 
 
     }
