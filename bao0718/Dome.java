@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName Dome
- * @Description TODO
+ * @Description 数组排序，从小到大；求最大值。
  * @Author CQ
  * @Date 2022/7/18 13:50
  * @Version 1.0
