@@ -1,6 +1,4 @@
-package ChengqianJishi;
-
-import java.util.Scanner;
+package ChengqianJishi0713;
 
 /**
  * @ClassName Dome5

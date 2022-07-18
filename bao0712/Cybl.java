@@ -15,9 +15,9 @@ public class Cybl {
         System.out.println("沙漠逃亡>穿越部落\n");
         Scanner input = new Scanner(System.in);
         int tribe = 1;//定义部落
-        //部落间随机距离200~600
-        int max = 600;
-        int min = 200;
+        //部落间随机距离100~400
+        int max = 400;
+        int min = 100;
         int mileage = 0;
         Random random = new Random();
         int juli = 0;
@@ -27,7 +27,7 @@ public class Cybl {
                 System.out.println("请决定：a、继续逃生 b、向当地人交出骆驼");
                 char choice = input.next().charAt(0);
                 if (choice == 'a') {
-                    //部落间随机距离200~600
+                    //部落间随机距离100~400
                     mileage = random.nextInt(max) % (max - min + 1) + min;
                     System.out.println("开始逃亡，前进距离为：" + mileage);
                     juli = juli + mileage;
@@ -37,6 +37,7 @@ public class Cybl {
                 tribe++;
             } else {
                 System.out.println("你穿越了5个部落，获得了游戏胜利！");
+                break;
             }
         } while (juli < 1000);
         if (tribe == 1) {
