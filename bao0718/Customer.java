@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName Customer
- * @Description 计算顾客年龄层次占比
+ * @Description 计算顾客年龄层次占比。
  * @Author CQ
  * @Date 2022/7/18 9:57
  * @Version 1.0
