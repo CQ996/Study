@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName MenuSwitching
- * @Description 输入商品和数量，购物结算并找零
+ * @Description 输入商品和数量，购物结算并找零。
  * @Author CQ
  * @Date 2022/7/18 9:30
  * @Version 1.0
