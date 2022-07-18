@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName Average
- * @Description 循环录入5门课成绩并计算平均分
+ * @Description 循环录入5门课成绩并计算平均分。
  * @Author CQ
  * @Date 2022/7/18 10:39
  * @Version 1.0
