@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName Shopping
- * @Description TODO
+ * @Description 管理系统>购物结算——输入商品和数量结算并找零。
  * @Author CQ
  * @Date 2022/7/18 8:47
  * @Version 1.0
