@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName Dome2
- * @Description 扑克从大到小排序，中间插入一位
+ * @Description 扑克从大到小排序，中间插入一位。
  * @Author CQ
  * @Date 2022/7/18 14:26
  * @Version 1.0
