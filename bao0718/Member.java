@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName Member
- * @Description TODO
+ * @Description 输入会员号，不是4位数字就报错。
  * @Author CQ
  * @Date 2022/7/18 11:16
  * @Version 1.0
