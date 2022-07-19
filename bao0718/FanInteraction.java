@@ -14,11 +14,13 @@ public class FanInteraction {
         Scanner input=new Scanner(System.in);
         int []fans=new int[7];
         fans=new int[]{326,301,278,232,205,178,0};
+        //或者
+        //int []fans={326,301,278,232,205,178,0};
         System.out.println("原粉丝互动数：");
             for(int i=0;i<fans.length;i++){
                 System.out.print(fans[i]+"\t");
         }
-        int index= fans.length;//存储插入位置 7
+        int index= fans.length;//存储插入位置 7，此处随便赋值多少，因为下面index会重新赋值
         System.out.println("\n新插入粉丝互动数：");
         int insertNum= input.nextInt();//输入遗漏的数字
         for (int i = 0; i < fans.length; i++) {
