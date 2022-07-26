@@ -18,6 +18,7 @@ public class FreeXia {
     int xiabimun=500;
     int choice1;
     String answer="";
+
     //显示登录菜单
     public void showLonginMenu(){
         System.out.println("1、虾米登录");
