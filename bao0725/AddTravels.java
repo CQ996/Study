@@ -13,6 +13,14 @@ public class AddTravels {
     String answer;
     String[] titles=new String[4];
     Scanner input=new Scanner(System.in);
+    public void add(String title){
+        for (int i = 0; i < titles.length; i++) {
+            if(titles[i]==null){
+                titles[i]=title;
+                break;
+            }
+        }
+    }
     public void youji(){
         for (int i = 1; i <=4; i++) {
             System.out.println("请输入游记标题：");
@@ -28,15 +36,6 @@ public class AddTravels {
             }
         }
     }
-
-    public void add(String title){
-        for (int i = 0; i < titles.length; i++) {
-            if(titles[i]==null){
-                titles[i]=title;
-                break;
-            }
-        }
-    }
     public void show(){
         System.out.println("********我的游记********");
         for (int i = 0; i < titles.length; i++) {
@@ -45,7 +44,6 @@ public class AddTravels {
             }
         }
     }
-
     public void modify(){
         while (2>1){
             int i=0;
@@ -63,5 +61,4 @@ public class AddTravels {
             }
         }
     }
-
 }
