@@ -14,6 +14,7 @@ public class Menu {
     int select;
     String name;
     int password;
+
     //显示登录菜单
     public void showLoginMenu(){
         System.out.println("欢迎使用我行我素购物管理系统");
