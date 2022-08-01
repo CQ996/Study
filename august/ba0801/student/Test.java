@@ -12,9 +12,16 @@ import java.util.Scanner;
 public class Test {
     Scanner in=new Scanner(System.in);
     public static void main(String[] args) {
+        /*
         String name="小王";
         int age=18;
         Student student=new Student(name,age);
+        student.setName("阿前");
         student.show();
+        */
+        Student student=new Student();
+        student.setName("阿前");
+        student.setAge(20);
+        System.out.println("姓名是"+student.getName()+"，年龄是："+ student.getAge());
     }
 }
