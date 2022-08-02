@@ -21,14 +21,29 @@ public class Student {
         this.aaa=555;
         this.bbb="777";
     }
-    public void show(){
-        System.out.println("学号是"+studNum+"姓名是："+name+"年龄是："+age);
+    public static void show(){
+        //静态方法不能调用实例方法，反之可以
+        //非要调用，先实例化对象
+        Student student=new Student();
+        System.out.println("学号是"+student.studNum+"姓名是："+student.name+"年龄是："+student.age);
     }
     String studNum;
     private String name;
     private int age;
     int aaa;
     String bbb;
+    char sex;
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        if(sex=='男' || sex=='女'){
+            this.sex = sex;
+        }else {System.out.println("性别非法！");}
+
+    }
 
     public String getName() {
         return name;

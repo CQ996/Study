@@ -22,6 +22,7 @@ public class Test {
         Student student=new Student();
         student.setName("阿前");
         student.setAge(20);
-        System.out.println("姓名是"+student.getName()+"，年龄是："+ student.getAge());
+        student.setSex('男');
+        System.out.println("姓名是"+student.getName()+"，年龄是："+ student.getAge()+"性别是："+student.getSex());
     }
 }
