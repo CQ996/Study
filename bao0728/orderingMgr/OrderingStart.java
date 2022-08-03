@@ -1,4 +1,4 @@
-package july.bao0728.orderingMgr;
+package bao0728.orderingMgr;
 
 /**
  * @ClassName OrderingMgr
