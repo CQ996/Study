@@ -1,5 +1,6 @@
 package bao0726;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -26,13 +27,16 @@ public class Sort {
             System.out.println(titles[i]);
         }
     }
+    /*
     public void paixu(String[] aaa){
         for (int i = 0; i < aaa.length; i++) {
             titles =aaa;
         }
     }
+    */
     public void show2(){
         System.out.println("********排序后*******");
+        Arrays.sort(titles);
         for (int i = 0; i < 5; i++) {
             System.out.println(titles[i]);
         }
