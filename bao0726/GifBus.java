@@ -9,21 +9,21 @@ package bao0726;
  */
 public class GifBus {
         //定义对象为数组
-        GifBiz[] gifBizs=new GifBiz[3];
+        GifBiz[] aaa =new GifBiz[3];
 
-        //定义一个对象 gifbiz
+        //以GifBiz为模板定义一个对象 bbb
         public void setAdd(GifBiz bbb){
-            for (int i = 0; i < gifBizs.length; i++) {
-                if(gifBizs[i]==null){
-                    gifBizs[i]=bbb;
+            for (int i = 0; i < aaa.length; i++) {
+                if(aaa[i]==null){
+                    aaa[i]=bbb;
                     break;
                 }
             }
         }
         //显示信息
         public void getGif(){
-            for (int i = 0; i < gifBizs.length; i++) {
-                gifBizs[i].show();
+            for (int i = 0; i < aaa.length; i++) {
+                aaa[i].show();
             }
         }
 }
