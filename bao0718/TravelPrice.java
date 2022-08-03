@@ -1,7 +1,7 @@
 package bao0718;
 
 import java.util.Scanner;
-import java.util.Arrays;
+
 /**
  * @ClassName TravelPrice
  * @Description 输出最低旅行报价
