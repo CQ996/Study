@@ -1,7 +1,5 @@
 package bao0719;
 
-import java.util.Scanner;
-
 /**
  * @ClassName Parallelogram
  * @Description 双循环输出平行四边形
