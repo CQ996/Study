@@ -1,4 +1,4 @@
-package july.bao0727;
+package bao0727;
 
 /**
  * @ClassName Demo2
