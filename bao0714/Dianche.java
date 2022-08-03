@@ -1,5 +1,5 @@
 package bao0714;
-import java.util.Scanner;
+
 public class Dianche {
     public static void main(String[] args) {
 
