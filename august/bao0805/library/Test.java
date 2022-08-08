@@ -5,7 +5,7 @@ import august.ba0802.farm.Corn;
 
 /**
  * @ClassName Test
- * @Description 多态——向下转型,多态——数组 两种方法计算图书馆罚金
+ * @Description 多态——向下转型,多态——数组，多态——动态绑定 两种方法计算图书馆罚金
  * @Author CQ
  * @Date 2022/8/5 16:14
  * @Version 1.0
@@ -18,7 +18,7 @@ public class Test {
         book[1] = new KidBook("《半小时漫画中国史》、《最好的朋友》",21,2);
         book[2] = new Literature("《世界文化遗产》",14,1);
         for (int i = 0; i < book.length; i++) {
-            money+=book[i].calFines(30);
+            money+=book[i].calFines(30);//动态绑定
         }
         System.out.println("一共需交纳罚金："+money+"元");
  /*
