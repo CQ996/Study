@@ -10,7 +10,8 @@ package august.bao0805.library;
 public class Literature extends Book {
     //书本数量
     int numBooks;
-    public Literature(int numBooks){
+    public Literature(String name,int borrowingPeriod,int numBooks){
+        super(name,borrowingPeriod);
         this.numBooks=numBooks;
     }
     //罚金

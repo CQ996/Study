@@ -26,10 +26,14 @@ public abstract class Book {
         this.borrowingPeriod = borrowingPeriod;
     }
 
+    public Book(String name,int borrowingPeriod){
+        this.name=name;
+        this.borrowingPeriod=borrowingPeriod;
+    }
     //书名
-    String name;
+    private String name;
     //借阅期限
-    int borrowingPeriod;
+    private int borrowingPeriod;
 
     //罚金
     public abstract double calFines(int borrowingDays);

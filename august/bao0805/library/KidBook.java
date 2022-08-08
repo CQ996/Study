@@ -10,7 +10,8 @@ package august.bao0805.library;
 public class KidBook extends Book {
     //书本数量
     int numBooks;
-    public KidBook(int numBooks){
+    public KidBook(String name,int borrowingPeriod,int numBooks){
+        super(name,borrowingPeriod);
         this.numBooks=numBooks;
     }
 

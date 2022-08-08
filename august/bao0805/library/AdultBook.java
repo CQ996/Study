@@ -11,7 +11,8 @@ public class AdultBook extends Book {
     public AdultBook(){}
     //书本数量
     int numBooks;
-    public AdultBook(int numBooks){
+    public AdultBook(String name,int borrowingPeriod,int numBooks){
+        super(name,borrowingPeriod);
         this.numBooks=numBooks;
     }
 
