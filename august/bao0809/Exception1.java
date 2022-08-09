@@ -38,7 +38,7 @@ public class Exception1 {
     public static void f2() throws FileNotFoundException,NullPointerException,ArithmeticException{
         //创建了一个文件流对象
         //编译时异常（必须要处理）：FileNotFoundException（文件找不到的异常）
-        //使用throws，抛出异常，让调用f2方法的调用者（f2）处理
+        //使用throws，抛出异常，让调用f2()方法的调用者处理
         //throws后面的异常类型可以是方法中产生的异常，也可以是它的父类
         //throws关键字后也可以是 异常列表，即可以抛出多个异常
         FileInputStream fis=new FileInputStream("d://aa.txt");
