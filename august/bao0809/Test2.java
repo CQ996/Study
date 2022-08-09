@@ -17,12 +17,13 @@ public class Test2 {
         try {
             //可能产生异常的代码：FileNotFoundException
             FileReader fr = new FileReader("1.ppt");
-            System.out.println("正在加载中······");//不走
+            System.out.println("正在加载中······");//上面找不到文件这里就不走
 
             //模拟其他异常：ArithmeticException
             int a = 10/0;
 
-            //更多异常
+            //更多异常类型······
+
 
         }catch (FileNotFoundException e1){//当以上代码块产生异常后，我们将匹配对应的类型，给予处理。
             //识别到了异常对象：e1.
@@ -38,7 +39,9 @@ public class Test2 {
             //如果以上两个子类异常类型都不匹配时，则进入该父类异常类型中处理。
             System.out.println("抱歉，服务器忙！！！");
         }finally {
-            System.out.println("~~~~~~~~~");
+            //表示：以上异常处理，无论是否产生异常时，都将执行触发的代码块。
+            //模拟：必要执行关闭程序
+            System.out.println("模拟程序关闭！！！");
         }
 
 
