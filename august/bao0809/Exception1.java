@@ -15,23 +15,24 @@ public class Exception1 {
                 String str = "程前";
                 String name1=null;
 
-                try {
-                    System.out.println(name1.length());
-                    Integer num1 = new Integer(str);
-                    //Integer.parseInt(String s)将会返回int常量。
-                    //Integer.valueOf(String s)将会返回Integer类型，如果存在缓存将会返回缓存中已有的对象。
-                    int num2 = Integer.parseInt(str);
-                    Integer num3 = Integer.valueOf(str);
-                    System.out.println(num1+"\t"+num2+"\t"+num3);
-                }catch(NumberFormatException f){
-                    System.out.println("数字格式异常:" + f);
-                }catch (ClassCastException c){
-                    System.out.println("类型转换异常:" + c);
-                }catch (NullPointerException p){
-                    System.out.println("空指针异常:" + p);
-                }finally{
-                    System.out.println("无论是否发生异常，finally 代码块中的代码总会被执行。" );
-                }
+//                try {
+//                    System.out.println(name1.length());
+//                    Integer num1 = new Integer(str);
+//                    //Integer.parseInt(String s)将会返回int常量。
+//                    //Integer.valueOf(String s)将会返回Integer类型，如果存在缓存将会返回缓存中已有的对象。
+//                    int num2 = Integer.parseInt(str);
+//                    Integer num3 = Integer.valueOf(str);
+//                    System.out.println(num1+"\t"+num2+"\t"+num3);
+//                }catch(NumberFormatException f){
+//                    System.out.println("数字格式异常:" + f);
+//                }catch (ClassCastException c){
+//                    System.out.println("类型转换异常:" + c);
+//                }catch (NullPointerException p){
+//                    System.out.println("空指针异常:" + p);
+//                }finally{
+//                    System.out.println("无论是否发生异常，finally 代码块中的代码总会被执行。" );
+//                }
+
                 f2();
 
     }
