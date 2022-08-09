@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @Date 2022/8/9 17:43
  * @Version 1.0
  */
-public class Achievement {
+public class Chengji {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
         System.out.println("请输入考试成绩：");
