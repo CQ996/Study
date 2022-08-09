@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
  * @Date 2022/8/9 10:50
  * @Version 1.0
  */
-public class Exception {
+public class Exception1 {
     public static void main(String[] args) throws FileNotFoundException {
                 String str = "程前";
                 String name1=null;
