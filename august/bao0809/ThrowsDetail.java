@@ -25,7 +25,7 @@ public class ThrowsDetail {
     public static void f1() throws FileNotFoundException {
         //1、因为f1抛出的是一个编译异常
         //2、即这时要求f1()必须处理这个编译异常
-        //3、再f1()中，要么try-catch或者继续throws这个编译异常
+        //3、再f1()中，要么try_catch_finally或者继续throws这个编译异常
         f3();//抛出异常
     }
     public static void f3() throws FileNotFoundException {
