@@ -9,11 +9,13 @@ package august.bao0808.usb;
  */
 public class Test {
     public static void main(String[] args) {
-        Mouse mouse=new Mouse();
-        mouse.press();
-        mouse.work();
-        Keyboard keyboard=new Keyboard();
-        keyboard.press();
-        keyboard.work();
+        Computer mouse= new Mouse();
+        Computer keyboard=new Keyboard();
+        yx(mouse);
+        yx(keyboard);
+    }
+    public static void yx(Computer yx){
+        yx.press();
+        yx.work();
     }
 }
