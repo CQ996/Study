@@ -34,9 +34,6 @@ public class Test2 {
         // jiayouStation( xxx );  支持扩展更多子类型实例.
 
 
-
-
-
     }
 
     //模拟加油站加油功能:
