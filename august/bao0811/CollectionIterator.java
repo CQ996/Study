@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @ClassName CollectionIterator
- * @Description 用Iterator迭代器遍历获取集合中的单一元素
+ * @Description Collection接口遍历方式一：用Iterator迭代器遍历获取集合中的单一元素
  * @Author CQ
  * @Date 2022/8/11 10:04
  * @Version 1.0
