@@ -78,9 +78,7 @@ public class Game {
         //2、玩家输入一次字符串，返回输入结果
         player.setStartTime(ms1);
         String shuru=player.Playe();
-        System.out.println(shuru);
         printResult(str,shuru);
-
         return shuru;
     }
 
