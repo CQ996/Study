@@ -22,13 +22,13 @@ public class CollectionExercise {
         //获得一个list集合的迭代器
         Iterator Dogss= list.iterator();
         while (Dogss.hasNext()) {
-            Object next =  Dogss.next();
-            System.out.println(next);
+            Object dog =  Dogss.next();
+            System.out.println(dog);
         }
 
         System.out.println("2、用增强for循环遍历");
-        for (Object o :list) {
-            System.out.println(o);
+        for (Object dog :list) {
+            System.out.println(dog);
         }
 
     }
