@@ -80,13 +80,13 @@ public class Game {
         String shuru=player.Playe();
         System.out.println(shuru);
         printResult(str,shuru);
-        a++;
+
         return shuru;
     }
 
     //展示玩家游戏过程
     public void printResult(String out,String in){
-
+        a++;
         //3、确认输入的字符串并输出结果，失败：直接退出！
         if(out.equals(in)){
             ms2= System.currentTimeMillis();
@@ -95,12 +95,15 @@ public class Game {
             int gq= getPlayer().getLevelNo();
             if(s<= level.getTimeLimit()){
                 System.out.println("输入正确，您的级别："+player.getLevelNo()+"，您的积分："+player.getCurrScore()+"，已用时："+s+"秒");
+                player.setCurrScore(a);
             }else {
                 //4、检查时间：决定是否超时。
                 System.out.println("你输入的太慢了，已经超时，退出！");
+                System.exit(1);
             }
         }else {
             System.out.println("输入错误，退出！");
+            System.exit(1);
         }
 
     }
