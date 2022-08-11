@@ -23,14 +23,14 @@ public class CollectionMethod {
         System.out.println("list=" + list);
 //      contains:查找元素是否存在
         System.out.println(list.contains("jack"));//True
-//      size:获取元素个数
+//      size:获取元素个数（长度）
         System.out.println(list.size());
 //      isEmpty:判断是否为空
         System.out.println(list.isEmpty());//不是全空false
 //      clear:清空
         list.clear();
         //System.out.println("list=" + list);
-//      addAll:添加多个元素
+//      addAll:添加多个元素（子集合）
         ArrayList list2 = new ArrayList();
         list2.add("红楼梦");
         list2.add("三国演义");
@@ -42,5 +42,13 @@ public class CollectionMethod {
         list.add("西游记");
         list.removeAll(list2);
         System.out.println("list=" + list);
+//      equals(Object o):将指定的对象与此集合进行比较，以进行相等性。
+//      hashCode():返回此集合的哈希代码值。
+
+
+//      toArray():返回包含此集合中所有元素的数组。
+        //T[]=toArray 集合转数组
+        Object t[] = list.toArray();
+        System.out.println("list=" + t[0]);
     }
 }
