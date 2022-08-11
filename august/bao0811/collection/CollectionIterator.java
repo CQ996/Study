@@ -21,10 +21,10 @@ public class CollectionIterator {
         //遍历col集合
         //1、先得到col对应的迭代器
         Iterator bookss=col.iterator();//得到一个集合的迭代器
-        //2.使用while循环遍历
+        //2.使用while循环遍历，迭代遍历过程中不能进行集合增减改操作
         while (bookss.hasNext()){//判断是否还有数据，没有就返回false
             //返回下一个元素，这里的编译类型是Object，但是运行类型取决于上面存放的对象类型
-            Object obj = bookss.next();//next()方法：①指针下移②将下移以后集合位置上的元素返回
+            Object obj = bookss.next();//next()方法：①指针下移②将下移以后集合位置上的元素返回 解析迭代器中的下一个元素并取出
             System.out.println("obj="+obj);
         }
             //快捷键，快速生成while循环--→itit
