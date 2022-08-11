@@ -19,7 +19,7 @@ public class CollectionMethod {
         System.out.println("list=" + list);
 //      remove:删除指定元素
         //list.remove(0);//删除第一个元素
-        list.remove(true);//指定删除某个元素
+        list.remove(1);//指定删除某个元素,数字时为下标
         System.out.println("list=" + list);
 //      contains:查找元素是否存在
         System.out.println(list.contains("jack"));//True
