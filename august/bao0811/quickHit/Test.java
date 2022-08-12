@@ -1,5 +1,4 @@
 package august.bao0811.quickHit;
-import static august.bao0811.quickHit.LevelParam.leves;
 /**
  * @ClassName Test
  * @Description 输入字符串闯关游戏

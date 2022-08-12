@@ -85,19 +85,19 @@ public class Game {
             printResult(str,shuru);
 
         }
-        return "11111";
+        return "这里屌用没有，所以我瞎写~~";
     }
 
     //展示玩家游戏过程
     public void printResult(String out,String in){
-        c=player.getLevelNo();
+        //c=player.getLevelNo();
         so= player.getCurrScore()+ level.getPerScore();
         //3、确认输入的字符串并输出结果，失败：直接退出！
         if(out.equals(in)){
             ms2= System.currentTimeMillis();
             player.setElapsedTime(ms2);
             int s=(int)(ms2-ms1)/1000;
-            int gq= getPlayer().getLevelNo();
+            //int gq= getPlayer().getLevelNo();
             if(s<= level.getTimeLimit()){
                 player.setCurrScore(so);
                 System.out.println("输入正确，您的级别："+player.getLevelNo()+"，您的积分："+so+"，已用时："+s+"秒");
