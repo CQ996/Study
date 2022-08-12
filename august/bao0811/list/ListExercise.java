@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class ListExercise {
     public static void main(String[] args) {
-        List list = new ArrayList();
+        List list = new Vector();
         for (int i = 0; i < 12; i++) {
             list.add("Hello"+i);
         }
