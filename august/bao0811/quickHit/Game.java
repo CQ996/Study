@@ -12,9 +12,10 @@ import static august.bao0811.quickHit.LevelParam.leves;
  */
 public class Game {
     Level level=new Level();
-    //关卡字符串的次数
-    int a=0;
-    int b=0;
+    //关卡
+    int c;
+    //接收当前关卡分数
+    int so=0;
     long ms1;
     long ms2;
     public Game() {
@@ -32,59 +33,65 @@ public class Game {
 
 
     public String printStr(){
-        a=player.getLevelNo();
-        level.setLevelNo(leves[a-1].getLevelNo());
-        level.setStrlength(leves[a-1].getStrlength());
-        level.setStrTime(leves[a-1].getStrTime());
-        level.setTimeLimit(leves[a-1].getTimeLimit());
-        level.setPerScore(leves[a-1].getPerScore());
+        //关卡数
+        c= player.getLevelNo();
+        //关卡编号
+        level.setLevelNo(leves[c-1].getLevelNo());
+        //关卡显示的字符串长度
+        level.setStrlength(leves[c-1].getStrlength());
+        //关卡字符串的次数
+        level.setStrTime(leves[c-1].getStrTime());
+        //关卡时间限制
+        level.setTimeLimit(leves[c-1].getTimeLimit());
+        //关卡正确输入一次的得分
+        level.setPerScore(leves[c-1].getPerScore());
 
-        //输出本关卡的字符串：
-        //1、根据当前关卡编号取出关卡相关信息
-        //2、产生随机字符串
-        //3、打印字符串，并返回
-
-        level.setStrlength(a);
-        //1、系统输出一次字符串，返回输出结果
-        Random random = new Random();
-        //采用字符缓冲区来实现字符串拼接
-        StringBuffer sb=new StringBuffer();
-        for (int i = 0; i < a; i++) {
-            int num=random.nextInt(level.getStrlength());
-            switch (num){
-                case 0:
-                    sb.append("q");
-                    break;
-                case 1:
-                    sb.append("w");
-                    break;
-                case 2:
-                    sb.append("a");
-                    break;
-                case 3:
-                    sb.append("s");
-                    break;
-                case 4:
-                    sb.append("d");
-                    break;
-                case 5:
-                    sb.append("e");
-                    break;
+        for (int i = 0; i < level.getStrTime(); i++) {
+            //1、系统输出一次字符串，返回输出结果
+            Random random = new Random();
+            //采用字符缓冲区来实现字符串拼接
+            StringBuffer sb=new StringBuffer();
+            for (int j = 0; j < level.getStrlength(); j++) {
+                int num=random.nextInt(level.getStrlength());
+                switch (num){
+                    case 0:
+                        sb.append("a");
+                        break;
+                    case 1:
+                        sb.append("b");
+                        break;
+                    case 2:
+                        sb.append("c");
+                        break;
+                    case 3:
+                        sb.append("d");
+                        break;
+                    case 4:
+                        sb.append("e");
+                        break;
+                    case 5:
+                        sb.append("f");
+                        break;
+                }
             }
+
+            String str= sb.toString();
+            //打印输出
+            System.out.println(str);
+            ms1= System.currentTimeMillis();
+            //2、玩家输入一次字符串，返回输入结果
+            player.setStartTime(ms1);
+            String shuru=player.Playe();
+            printResult(str,shuru);
+
         }
-        String str= sb.toString();
-        System.out.println(str);
-        ms1= System.currentTimeMillis();
-        //2、玩家输入一次字符串，返回输入结果
-        player.setStartTime(ms1);
-        String shuru=player.Playe();
-        printResult(str,shuru);
-        return shuru;
+        return "11111";
     }
 
     //展示玩家游戏过程
     public void printResult(String out,String in){
-        a++;
+        c=player.getLevelNo();
+        so= player.getCurrScore()+ level.getPerScore();
         //3、确认输入的字符串并输出结果，失败：直接退出！
         if(out.equals(in)){
             ms2= System.currentTimeMillis();
@@ -92,8 +99,8 @@ public class Game {
             int s=(int)(ms2-ms1)/1000;
             int gq= getPlayer().getLevelNo();
             if(s<= level.getTimeLimit()){
-                System.out.println("输入正确，您的级别："+player.getLevelNo()+"，您的积分："+player.getCurrScore()+"，已用时："+s+"秒");
-                player.setCurrScore(a);
+                player.setCurrScore(so);
+                System.out.println("输入正确，您的级别："+player.getLevelNo()+"，您的积分："+so+"，已用时："+s+"秒");
             }else {
                 //4、检查时间：决定是否超时。
                 System.out.println("你输入的太慢了，已经超时，退出！");

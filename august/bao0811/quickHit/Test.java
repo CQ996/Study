@@ -1,5 +1,5 @@
 package august.bao0811.quickHit;
-
+import static august.bao0811.quickHit.LevelParam.leves;
 /**
  * @ClassName Test
  * @Description 输入字符串闯关游戏
@@ -9,11 +9,12 @@ package august.bao0811.quickHit;
  */
 public class Test {
     public static void main(String[] args) {
+        //关卡
         int c=1;
         //玩家
         Player p1 = new Player();
         p1.setLevelNo(1);
-        p1.setCurrScore(1);
+        p1.setCurrScore(0);
 
         //游戏
         Game g1 = new Game();
@@ -22,9 +23,11 @@ public class Test {
         //开始游戏,循环关卡
         //再循环每个关卡的次数
         for (int i = 0; i < 6; i++) {
+            System.out.println("第"+c+"关");
             g1.printStr();
             c++;
             p1.setLevelNo(c);
+            p1.setCurrScore(0);
         }
     }
 }
