@@ -11,7 +11,8 @@ import java.util.ArrayList;
  */
 public class ArrayListDetail {
     public static void main(String[] args) {
-        //ArrayListxian'c2不安全，如下源码方法中没有 synchronized 修饰（线程互斥）
+        //ArrayList不安全，如下源码，方法中没有 synchronized 修饰（线程互斥）
+        //多线程时，不建议使用！！！
         /*
         public boolean add(E e) {
         ensureCapacityInternal(size + 1);  // Increments modCount!!
