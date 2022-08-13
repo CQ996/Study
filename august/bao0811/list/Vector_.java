@@ -31,6 +31,7 @@ public class Vector_ {
         public Vector() {
                 this(10);
             }
+
          2、vector.add
          2.1  //下面这个方法就是添加数据到vector集合
             public synchronized boolean add(E e) {
@@ -47,7 +48,12 @@ public class Vector_ {
           }
           2.3  //如果需要的数组大小不够用就扩容，扩容的算法
           //newCapacity = oldCapacity + ((capacityIncrement > 0) ?
-          //                                             capacityIncrement : oldCapacity);
+                                                       capacityIncrement : oldCapacity);
+          //补充：如果   Vector vector2 = new Vector(8);
+            走到方法：
+              public Vector(int initialCapacity) {
+                this(initialCapacity, 0);
+            }
           //就是扩容2倍
               private void grow(int minCapacity) {
             // overflow-conscious code
@@ -68,11 +74,13 @@ public class Vector_ {
         vector.add(100);
         System.out.println(vector);
 
-
+        //有参构造
         Vector vector2 = new Vector(8);
         for (int i = 0; i < 10; i++) {
             vector.add(i);
         }
+        vector.add(100);
+        System.out.println(vector);
 
     }
 
