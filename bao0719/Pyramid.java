@@ -1,7 +1,5 @@
 package bao0719;
 
-import java.util.Scanner;
-
 /**
  * @ClassName Pyramid
  * @Description 双循环输出金字塔

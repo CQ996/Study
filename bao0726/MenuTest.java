@@ -1,7 +1,5 @@
 package bao0726;
 
-import bao0726.Menu;
-
 /**
  * @ClassName MenuTest
  * @Description 菜单类的测试

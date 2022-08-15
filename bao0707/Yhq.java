@@ -1,7 +1,5 @@
 package bao0707;
 
-import java.util.Scanner;
-
 public class Yhq {
     public static void main(String[] args) {
         System.out.println("*************行程消费单*************");

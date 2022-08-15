@@ -7,7 +7,7 @@ package august.ba0802.farm;
  * @Date 2022/8/2 13:56
  * @Version 1.0
  */
-public class Crop {
+public abstract class Crop {
     public Crop(){
 
 /*
@@ -30,16 +30,18 @@ public class Crop {
         this.isHarvested=isHarvested;
     }
 
-    public void show(){
+    public abstract void show();/*{
         System.out.println("*****作物特性*****");
         System.out.println("你种植了"+name+",");
         System.out.println("成长期"+this.getGroTime()+"天，采摘期"+this.getHavrsTime()+"天，" +
                 "果实数量"+this.getNumsFruit()+"，现在处于"+this.getStatus()+"，");
-    }
+    }*/
 
-    public void state(){
+    public abstract void state();/*{
         System.out.println("现在"+name+"处于"+this.getStatus());
-    }
+    }*/
+
+
 
     protected String name;
     private int groTime;

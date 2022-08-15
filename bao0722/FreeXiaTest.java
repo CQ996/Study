@@ -1,7 +1,5 @@
 package bao0722;
 
-import java.util.Scanner;
-
 /**
  * @ClassName FreeXiaTest
  * @Description 自由虾平台菜单联动测试

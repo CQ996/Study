@@ -1,7 +1,5 @@
 package bao0725;
 
-import java.util.Scanner;
-
 /**
  * @ClassName AddTravelsTest
  * @Description 循环添加游记标题再输出测试
