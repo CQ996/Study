@@ -1,4 +1,4 @@
-package july.jishi0721;
+package jishi0721;
 
 import java.util.Arrays;
 import java.util.Scanner;
