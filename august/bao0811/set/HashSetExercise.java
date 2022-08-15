@@ -12,9 +12,9 @@ import java.util.*;
 public class HashSetExercise {
     public static void main(String[] args) {
         HashSet hashSet = new HashSet();
-        hashSet.add(new Employee("milan",18));
-        hashSet.add(new Employee("smith",28));
-        hashSet.add(new Employee("milan",18));
+        hashSet.add(new Employee1("milan",18));
+        hashSet.add(new Employee1("smith",28));
+        hashSet.add(new Employee1("milan",18));
         //三个不同的对象hash值不同，所以都可以添加
         //重写equals()、hashCode() 后第三个重复对象不能添加
         System.out.println(hashSet);
@@ -24,8 +24,8 @@ public class HashSetExercise {
 }
 
 //创建Employee(员工类)
-class Employee{
-    public Employee() {
+class Employee1 {
+    public Employee1() {
     }
 
     public String getName() {
@@ -47,7 +47,7 @@ class Employee{
     private String name;
     private int age;
 
-    public Employee(String name, int age) {
+    public Employee1(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -66,8 +66,8 @@ class Employee{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return age == employee.age && Objects.equals(name, employee.name);
+        Employee1 employee1 = (Employee1) o;
+        return age == employee1.age && Objects.equals(name, employee1.name);
     }
 
     //如果name 和 age的值相同，在计算hashCode()值时，返回相同的结果
