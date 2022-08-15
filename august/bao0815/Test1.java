@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @ClassName Test1
- * @Description ArrayList功能方法演示
+ * @Description List功能方法演示
  * @Author CQ
  * @Date 2022/8/15 13:58
  * @Version 1.0
@@ -53,11 +53,11 @@ public class Test1 {
         ListIterator it= list.listIterator();
         while (it.hasNext()) {//从前往后遍历
             Object o2 =  it.next();
-            //通过迭代器加入新元素，不能通过集合操作
             it.add("王");
+            //通过迭代器加入新元素，不能通过集合操作
             System.out.println("listIterator()迭代器取出的集合："+o2);
         }
-
+        System.out.println(list);
         System.out.println("===================");
         while (it.hasPrevious()) {//从后往前遍历
             Object o3 =  it.previous();
