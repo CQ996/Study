@@ -1,4 +1,4 @@
-package august.bao0816;
+package august.bao0816.treeSet;
 
 
 import java.util.*;
@@ -15,22 +15,28 @@ public class Test1 {
         //TreeSet:支持元素的顺序排列（切记，如果设计自定义类型元素）
         //方式一: 将Student类型实现Comparable接口,具备比较能力.
         TreeSet set1 = new TreeSet();
-        Student s1 =new Student();
-        s1.height=170;
-        Student s2 =new Student();
-        s2.height=171;
-        Student s3 =new Student();
-        s3.height=162;
-        Student s4 =new Student();
-        s4.height=170;
+
+        Student s1 = new Student();
+        s1.height = 170;
+
+        Student s2 = new Student();
+        s2.height = 171;
+
+        Student s3 = new Student();
+        s3.height = 162;
+
+        Student s4 = new Student();
+        s4.height = 170;
+
         set1.add(s1);
         set1.add(s2);
         set1.add(s3);
         set1.add(s4);
         Iterator it = set1.iterator();
-        while (it.hasNext()) {
-            Student next =  (Student)it.next();
-            System.out.println("集合中的身高为："+next.height);
+        while( it.hasNext() ){
+            Student next = (Student) it.next();
+
+            System.out.println( "集合中的身高为: "+next.height );
         }
 
     }
