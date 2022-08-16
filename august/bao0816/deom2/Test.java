@@ -27,15 +27,15 @@ public class Test {
         saa.put("三年级二班",stu2);
         System.out.println("输入班级名称：");
         String grade=in.next();
+        //获取saa集合的键
         Set<String> keys = saa.keySet();
-        Collection<ArrayList> values = saa.values();
         for (String key : keys ) {
+            //获取saa集合的值
             ArrayList list = saa.get(key);
+            //获取值的迭代器
             Iterator it = list.iterator();
-
             if (grade.equals(key)) {
                 System.out.println(grade + "学生列表：");
-
                 while (it.hasNext()) {
                     Student st = (Student) it.next();
                     System.out.println(st.name + "\t\t" + st.age + "\t\t" + st.sex);
@@ -85,8 +85,5 @@ class Student {
         this.sex = sex;
     }
 
-    @Override
-    public String toString() {
-        return name + "\t"+ age +  "\t"+sex ;
-    }
+
 }
