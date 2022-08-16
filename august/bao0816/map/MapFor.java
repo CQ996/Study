@@ -1,6 +1,5 @@
 package august.bao0816.map;
 
-import java.util.HashMap;
 import java.util.*;
 
 /**
@@ -23,7 +22,7 @@ public class MapFor {
         System.out.println("===第一种方式===");
         Set keyset = map.keySet();
         //1.增强for循环
-        System.out.println();
+        //System.out.println();
         for (Object key :keyset) {
             System.out.println(map.get(key));
         }
