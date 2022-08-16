@@ -5,14 +5,14 @@ import java.util.*;
 
 /**
  * @ClassName Test1
- * @Description TreeSet:将Student类型实现Comparable接口,具备比较能力.
+ * @Description TreeSet方式一:将Student类型实现Comparable接口,具备比较能力.
  * @Author CQ
  * @Date 2022/8/16 9:40
  * @Version 1.0
  */
 public class Test1 {
     public static void main(String[] args) {
-        //TreeSet:支持元素的顺序排列（切记，如果设计自定义类型元素）
+        //TreeSet:支持元素的顺序排列（切记，如果设计自定义类型元素，需要提供比较器）
         //方式一: 将Student类型实现Comparable接口,具备比较能力.
         TreeSet set1 = new TreeSet();
 
