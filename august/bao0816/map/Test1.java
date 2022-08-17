@@ -74,10 +74,10 @@ public class Test1 {
         Iterator it3 = set2.iterator();
         while ( it3.hasNext() ) {
             //注意: o1对象结构为: key-value形式.
-            Object o1 = it3.next();
+            Map.Entry entry = (Map.Entry) it3.next();
 
             //Map.Entry类型即为: key-value形式.
-            Map.Entry entry = (Map.Entry)o1;
+            //Map.Entry entry = (Map.Entry)o1;
 
             //解析单个对象的内部详细信息:
             Object k = entry.getKey();
