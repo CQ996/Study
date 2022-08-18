@@ -1,8 +1,5 @@
-package august.bao0819;
+package august.bao0819.FileInputStream_;
 
-import jdk.internal.util.xml.impl.Input;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
@@ -18,7 +15,7 @@ public class FileInputStreamDemo01 {
         //1.创建一个文件字符输入流管道与源文件接通。
         //InputStream is=new FileInputStream(new File("data.txt"));
         //简化写法
-        InputStream is=new FileInputStream("src/data.txt");
+        InputStream is=new FileInputStream("august/bao0819/FileInputStream_/data.txt");
         //2.读取一个字节返回（每次读取一滴水）
 //        int b1=is.read();
 //        System.out.println((char) b1);
