@@ -69,10 +69,8 @@ class Student{
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", banji='" + banji + '\'' +
-                '}';
+        return "姓名：" + name + " " +
+                ", 班级：" + banji + " ";
     }
 
     public String getName() {
