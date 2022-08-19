@@ -1,4 +1,4 @@
-package august.bao0819.FileInputStream_;
+package august.bao0819.ioliu;
 
 import java.io.*;
 
@@ -12,7 +12,7 @@ import java.io.*;
 public class FileInputStreamDemo03 {
     public static void main(String[] args) throws Exception {
         //1.创建一个文件字节数组与文件的大小刚刚一样大。
-        File f = new File("src/august/bao0819/FileInputStream_/data_/data03.txt");
+        File f = new File("august/bao0819/ioliu/data03.txt");
         InputStream is = new FileInputStream(f);
         //2.定义一个字节数组与文件得到大小刚刚一样大
 //        byte[] buffer = new byte[(int) f.length()];
