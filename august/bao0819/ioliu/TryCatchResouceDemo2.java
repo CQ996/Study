@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * @ClassName CopyDemo05
- * @Description 使用TryCatchResouce释放资源
+ * @Description 使用TryCatchR有esouce释放资源
  * @Author CQ
  * @Date 2022/8/19 9:28
  * @Version 1.0
