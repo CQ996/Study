@@ -1,4 +1,4 @@
-package august.bao0819.FileInputStream_;
+package august.bao0819.ioliu;
 
 import java.io.FileInputStream;
 
@@ -12,7 +12,7 @@ import java.io.FileInputStream;
 public class FileInputStreamDemo02 {
     public static void main(String[] args) throws Exception {
         //1.创建一个文件字节输入流管道与源文件接通
-        FileInputStream is = new FileInputStream("src/august/bao0819/FileInputStream_/data_/data02.txt");
+        FileInputStream is = new FileInputStream("august/bao0819/ioliu/data02.txt");
         //2.定义一个字节数组，用于读取字节数组
 //        byte[] buffer = new byte[3];//读3个字节
 //        int len=is.read(buffer);
