@@ -1,7 +1,6 @@
-package august.bao0819.OutputStream_;
+package august.bao0819.ioliu;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 /**
  * @ClassName OutputStreamDome04
@@ -14,7 +13,7 @@ public class OutputStreamDome04 {
     public static void main(String[] args) throws Exception {
         //1.创建一个文件字节输出流管道与目标文件接通
         //加ture追加数据
-        OutputStream os = new FileOutputStream("src/august/bao0819/OutputStream_/data02/data03.txt",true);
+        OutputStream os = new FileOutputStream("august/bao0819/ioliu/data04.txt",true);
         //2.写数据出去，写一个字节出去
         //o.public void write(int a):
         os.write('a');
