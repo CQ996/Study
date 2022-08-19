@@ -33,6 +33,7 @@ public class Test1 {
         System.out.println( e == f );
         System.out.println( e == a );
         System.out.println( c == e );
+        System.out.println("===========");
 
         String s1 = "小明";
         String s2 = "小明";
@@ -43,7 +44,7 @@ public class Test1 {
         System.out.println( s1 == s2 );
         System.out.println( s3 == s4 );
         System.out.println( s1 == s3 );
-
+        System.out.println("===========");
         // equals ： 用于字符串对象比对,直接挨个判断每个字符值是否相等.
         System.out.println( s1.equals(s2) );
         System.out.println( s3.equals(s4) );
