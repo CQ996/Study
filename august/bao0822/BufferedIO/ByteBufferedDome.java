@@ -3,7 +3,7 @@ package august.bao0822.BufferedIO;
 import java.io.*;
 
 /**
- * @ClassName CopyDemo05
+ * @ClassName ByteBufferedDome
  * @Description 使用Buffered字节缓冲流复制文件
  * @Author CQ
  * @Date 2022/8/19 9:28
