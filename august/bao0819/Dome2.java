@@ -6,7 +6,7 @@ import java.util.Set;
 
 /**
  * @ClassName Dome2
- * @Description 实现模拟4位随机数:含有0~9, A-Z，a-z. ;保证生成的验证码是不重复的。
+ * @Description 两种方法实现模拟4位随机数:含有0~9, A-Z，a-z. ;保证生成的验证码是不重复的。
  * @Author CQ
  * @Date 2022/8/21 14:10
  * @Version 1.0
@@ -56,7 +56,8 @@ public class Dome2{
             System.out.print(next);
         }
 
-/*
+        System.out.println("");
+
         //方法二：用 双层for循环 和 if 判断
         char[] dft = new char[4];//不重复随机数组
         for (int i = 0; i <dft.length ; i++) {
@@ -75,7 +76,7 @@ public class Dome2{
         for (int i = 0; i < 4; i++) {
             System.out.print(dft[i]);
         }
-*/
+
 
     }
 }
