@@ -19,7 +19,7 @@ public class Test1 {
         File f2 = new File("d:"+ File.separator +"vms");
         File f3 = new File("d:/" , "1.txt");
 
-        //相对路径: 地址相对项目根目录存放.
+        //相对路径/目录: 地址相对项目根目录存放.
         File f4 = new File("2.txt");
         File f5 = new File("images");
 
