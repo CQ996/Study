@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * @ClassName CharBufferedDome
- * @Description 使用缓冲字符输入流，新增按照行读取方法
+ * @Description 使用缓冲字符输入流，新增按照行读取readLine()方法
  * @Author CQ
  * @Date 2022/8/22 4:30
  * @Version 1.0
