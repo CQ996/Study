@@ -1,10 +1,11 @@
 package august.bao0822;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * @ClassName RecursionDome1
- * @Description 去D盘搜索 WeChat.exe 文件
+ * @Description 去D盘搜索 WeChat.exe 文件并启动
  * @Author CQ
  * @Date 2022/8/22 3:00
  * @Version 1.0
@@ -33,6 +34,13 @@ public class RecursionDemo1 {
                         //7.判断文件名，是就输出
                         if(file.getName().contains(fileName)){
                             System.out.println("找到了"+file.getAbsolutePath());
+                            //启动软件
+                            try {
+                                Runtime r = Runtime.getRuntime();
+                                r.exec(file.getAbsolutePath());
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }else{
                         //8.判断是文件夹，就继续找
