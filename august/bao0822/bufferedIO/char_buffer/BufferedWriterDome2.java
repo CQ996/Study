@@ -11,7 +11,7 @@ import java.io.*;
  */
 public class BufferedWriterDome2 {
     public static void main(String[] args) throws Exception{
-        Writer fw=new FileWriter("2.txt");
+        Writer fw=new FileWriter("2.txt",true);
         BufferedWriter bw=new BufferedWriter(fw);
         bw.write(98);//b
         bw.write('a');//a
