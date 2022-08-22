@@ -28,7 +28,8 @@ public class ObjectOutputStreamDemo1 {
 class Student implements Serializable{
     private String name;
     private String loginName;
-    private String passWord;
+    //transient修饰成员变量，不参与序列化
+    private transient String passWord;
     private int age;
 
     public Student(String name, String loginName, String passWord, int age) {
