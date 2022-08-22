@@ -2,7 +2,9 @@ package august.bao0823.itheima_create;
 
 /**
  * @ClassName ThreadDemo1继承Thread类实现
- * @Description 多线程的创建方式一：继承Thread类,编码简单但只继承了一个类不利于扩展
+ * @Description 多线程的创建方式一：继承Thread类；
+ * 优点：编码简单
+ * 缺点：只能继承一个类不利于扩展
  * @Author CQ
  * @Date 2022/8/23 3:56
  * @Version 1.0
