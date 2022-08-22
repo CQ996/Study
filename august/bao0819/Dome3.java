@@ -19,6 +19,7 @@ public class Dome3 {
 //        while ((len=f1.read(arr1))!=-1){
 //            f2.write(arr1,0,len);
 //        }
+//        f1.close();
 //        f2.close();
 
         //字节流
