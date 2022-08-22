@@ -18,6 +18,7 @@ public class Dome3 {
 //        int len;
 //        while ((len=f1.read(arr1))!=-1){
 //            f2.write(arr1,0,len);
+//            f2.flush();
 //        }
 //        f1.close();
 //        f2.close();
@@ -34,6 +35,7 @@ public class Dome3 {
             int len;//记录读取每次读取的字节数
             while ((len=is.read(buffer))!=-1){
                 os.write(buffer,0,len);
+                os.flush();
             }
             System.out.println("复制完成了！");
             //4.关闭流
