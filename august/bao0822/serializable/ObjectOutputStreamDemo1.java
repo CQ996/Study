@@ -26,6 +26,9 @@ public class ObjectOutputStreamDemo1 {
 }
 //如果要序列化，必须要实现Serializable接口
 class Student implements Serializable{
+    //声明序列化的版本号
+    //序列化的版本号和反序列化的版本号必须一致，才能不出错
+    private static final long serialVersionUID=1;
     private String name;
     private String loginName;
     //transient修饰成员变量，不参与序列化
