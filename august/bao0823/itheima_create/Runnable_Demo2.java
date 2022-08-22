@@ -2,7 +2,7 @@ package august.bao0823.itheima_create;
 
 /**
  * @ClassName Runnable_Demo2
- * @Description 多线程的创建方式二：Runnable任务接口
+ * @Description 多线程的创建方式二：实现Runnable任务接口
  * 优点：只实现接口，可以继续继承类和实现接口，扩展性更强
  * 缺点：编程多一层对象包装，如果线程有执行结果是不能直接返回的
  * @Author CQ
