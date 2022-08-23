@@ -31,7 +31,9 @@ class Buy extends Thread{
     private Ticket ticket;
     @Override
     public void run() {
-        ticket.buyTicket(1);
+        synchronized (Buy.class){
+            ticket.buyTicket(1);
+        }
     }
 }
 //票库类
@@ -41,7 +43,7 @@ class Ticket{
     //购票途径
     private String channel;
     //购票的两种途径
-    public synchronized void buyTicket(int num){
+    public void buyTicket(int num){
         //0.获取购票途径（线程）
         String channel=Thread.currentThread().getName();
         while(true) {
