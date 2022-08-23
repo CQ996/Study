@@ -8,7 +8,7 @@ package august.bao0823.a0002;
  * @Date 2022/8/23 10:12
  * @Version 1.0
  */
-public class Thread_Method {
+public class Thread_yield {
     public static void main(String[] args) {
         MyThread1 m1=new MyThread1("宋江：");
         MyThread2 m2=new MyThread2("卢俊义：");
