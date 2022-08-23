@@ -1,5 +1,8 @@
 package august.bao0823.itheima_safe;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @ClassName Account
  * @Description 模拟取钱案例，加线程锁
@@ -8,7 +11,8 @@ package august.bao0823.itheima_safe;
  * @Version 1.0
  */
 public class Account {
-
+    //final修饰后：锁对象唯一不可替换
+    private final Lock lock=new ReentrantLock();
     public Account() {
     }
 
@@ -40,6 +44,7 @@ public class Account {
         //0.获取谁在取钱，线程名字就是人名
         String name=Thread.currentThread().getName();
         //1.判断账户是否够钱
+        lock.lock();//上锁
         if(this.money>=money){
             //2.取钱
             System.out.println(name+"来取钱，取走了"+money);
@@ -50,5 +55,6 @@ public class Account {
             //4.余额不足
             System.out.println(name+"来取钱，余额不足！");
         }
+        lock.unlock();//解锁
     }
 }
