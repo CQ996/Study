@@ -40,17 +40,25 @@ class Ticket{
     //购票途径
     private String channel;
     //购票的两种途径
-    public synchronized void buyTicket(int num){
+    public void buyTicket(int num){
         //0.获取购票途径（线程）
         String channel=Thread.currentThread().getName();
         while(true) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             //1.判断票是否还够
             if(this.num>=num){
-                //2.取票
-                System.out.println(channel+"来买票，买走了"+num);
-                //3.更新剩余票数
-                this.num-=num;
-                System.out.println(channel+"来买票后，剩余："+this.num);
+                synchronized(this){
+                    //2.取票
+                    System.out.println(channel+"来买票，买走了"+num);
+                    //3.更新剩余票数
+                    this.num-=num;
+                    System.out.println(channel+"来买票后，剩余："+this.num);
+                }
+
             }else {
                 //4.没票了
                 System.out.println(channel+"来买票，没票了！");
