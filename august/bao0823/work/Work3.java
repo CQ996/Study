@@ -36,17 +36,6 @@ class DrawThreads extends Thread{
     }
 }
 
-//存钱的线程类
-//class SaveThread extends DrawThreads{
-//
-//    public SaveThread(Accounts acc, String name) {
-//        super(acc, name);
-//        synchronized (SaveThread.class){
-//            acc.saveMoney(10000);
-//        }
-//
-//    }
-//}
 
 //账户类
 class Accounts {
