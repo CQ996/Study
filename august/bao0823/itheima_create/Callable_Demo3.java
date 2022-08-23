@@ -49,7 +49,7 @@ public class Callable_Demo3 {
 }
 
 //1.定义一个任务类 实现Callable接口,应该声明线程任务执行完毕后的结果数据类型
-class MyCallable implements Callable<String> {
+public class MyCallable implements Callable<String> {
     private int n;
 
     public MyCallable(int n) {
