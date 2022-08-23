@@ -1,6 +1,5 @@
 package august.bao0823.work;
 
-
 /**
  * @ClassName Work2
  * @Description 模拟火车票联网售票系统：多个线程同时出票，保证每张出票的编号连续且不重复。
@@ -31,9 +30,7 @@ class Buy extends Thread{
     private Ticket ticket;
     @Override
     public void run() {
-        synchronized (Buy.class){
-            ticket.buyTicket(1);
-        }
+        ticket.buyTicket(1);
     }
 }
 //票库类
@@ -43,7 +40,7 @@ class Ticket{
     //购票途径
     private String channel;
     //购票的两种途径
-    public void buyTicket(int num){
+    public synchronized void buyTicket(int num){
         //0.获取购票途径（线程）
         String channel=Thread.currentThread().getName();
         while(true) {
@@ -91,8 +88,5 @@ class Ticket{
     public void setChannel(String channel) {
         this.channel = channel;
     }
-
-
-
 
 }
