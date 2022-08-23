@@ -2,7 +2,7 @@ package august.bao0823.itheima_safe;
 
 /**
  * @ClassName ThreadDome1
- * @Description 模拟取钱案例
+ * @Description 模拟取钱案例，加线程锁
  * @Author CQ
  * @Date 2022/8/23 6:02
  * @Version 1.0

@@ -16,7 +16,11 @@ public class DrawThread extends Thread{
     }
     @Override
     public void run() {
-        //取钱方法
-        acc.drawMoney(100000);
+        //加线程锁
+        synchronized (DrawThread.class){
+            //取钱方法
+            acc.drawMoney(100000);
+        }
+
     }
 }
