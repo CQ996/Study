@@ -28,6 +28,11 @@ public class ServerDemo2 {
         int len = packet.getLength();
         String rs=new String(buffer,0,len);
         System.out.println("收到了"+rs);
+
+        //获取发送端的IP和端口
+        System.out.println("IP:"+packet.getSocketAddress().toString());
+        System.out.println("端口:"+packet.getPort());
+
         socket.close();
     }
 }

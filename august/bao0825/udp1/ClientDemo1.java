@@ -19,7 +19,7 @@ public class ClientDemo1 {
     public static void main(String[] args) throws Exception {
         System.out.println("=====客户端启动====");
         //1.创建发送端对象,发送端自带默认的端口号
-        DatagramSocket socket = new DatagramSocket();
+        DatagramSocket socket = new DatagramSocket(6666);
         //2.创建一个数据包对象封装数据
 /*
         public DatagramPacket(byte buf[], int length,
