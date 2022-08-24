@@ -20,8 +20,8 @@ public class ThreadPoolDemo1 {
          *                               long keepAliveTime,最大存活时间
          *                               TimeUnit unit,存活时间单位
          *               任务等待队列（缓存）BlockingQueue<Runnable> workQueue) {
-         *        默认线程工场this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue,
-         *              超出任务能力处理办法Executors.defaultThreadFactory(), defaultHandler)
+         *        this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue,
+         *              默认线程工场Executors.defaultThreadFactory(), defaultHandler)超出任务能力处理办法
          */
         ExecutorService pool=new ThreadPoolExecutor(3,5,
                 6, TimeUnit.SECONDS,new ArrayBlockingQueue<>(5),
