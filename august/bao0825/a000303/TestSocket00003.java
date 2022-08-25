@@ -21,12 +21,9 @@ public class TestSocket00003 {
         Socket socket=null;
         InputStream is =null;
         ByteArrayOutputStream baos =null;
-        InetAddress inetAddress=null;
-
         try {
-            inetAddress=InetAddress.getByName("127.0.0.1");
             //1.创建服务器端的ServerSocket,指定自己的端口号
-            ss=new ServerSocket(1233,10,inetAddress);
+            ss=new ServerSocket(1233,10,InetAddress.getByName("127.0.0.1"));
             //2.调用accept()表示接收来自客户端的Socket
             socket=ss.accept();
             //3.获取输入流

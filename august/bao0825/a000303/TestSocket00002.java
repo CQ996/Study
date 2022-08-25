@@ -24,14 +24,12 @@ import java.net.Socket;
  */
 public class TestSocket00002 {
     public static void main(String[] args) {
-        InetAddress inetAddress=null;
         Socket socket=null;
         OutputStream os=null;
         try {
             //客户端：
             //1.创建Socket对象，知名服务端的IP地址和端口号
-            inetAddress = InetAddress.getByName("127.0.0.1");
-            socket=new Socket(inetAddress,1233);
+            socket=new Socket(InetAddress.getByName("127.0.0.1"),1233);
             //2、获取一个输出流，用于输出数据
             os = socket.getOutputStream();
             //3.写出数据的操作
