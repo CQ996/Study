@@ -3,6 +3,7 @@ package august.bao0825.bs_;
 
 import java.io.*;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.*;
@@ -23,8 +24,11 @@ public class BSserverDemo {
         try {
             //1.注册端口
             //192.168.102.25
+            ServerSocket ss= new ServerSocket();
+
+            ss.bind(new InetSocketAddress("127.0.0.1",6666));
             //ServerSocket ss=new ServerSocket(12333,10, InetAddress.getByName ("192.168.102.25"));
-            ServerSocket ss=new ServerSocket(8080);
+            //ServerSocket ss=new ServerSocket(8080);
             //2.定义一个循环由接收多个客户端的请求
             while (true) {
                 //3.每接收到一个客户端的Socket管道，交给一个独立的子线程负责读取消息
