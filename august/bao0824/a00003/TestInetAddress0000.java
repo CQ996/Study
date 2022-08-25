@@ -6,7 +6,7 @@ import java.net.InetAddress;
  * @ClassName testInetAddress0000
  * @Description java.net.InetAddress
  * public class InetAddress extends Object implements Serivalizble
- * Intwenet上的主机有两种方式表示地址：
+ * Internet上的主机有两种方式表示地址：
  * 1、域名(hostName)：www.baidu.com
  * 2、IP地址（hostAdress）:14.215.177.39
  * InetAddress类主要表示IP地址
