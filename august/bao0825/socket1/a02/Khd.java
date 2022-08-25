@@ -18,7 +18,7 @@ public class Khd {
         InputStream is = socket.getInputStream();
         String info="用户名：Tom;密码：123456";
         os.write(info.getBytes());
-        socket.shutdownOutput();//关闭写入
+        socket.shutdownOutput();//关闭客户端的输出流
         String rel=null;
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
         while ((rel= br.readLine())!=null){
