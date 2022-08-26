@@ -34,7 +34,7 @@ public class TextXML2 {
         try {
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             try {
-                Document document = documentBuilder.parse(new File("resource/108_class1.xml"));
+                Document document = documentBuilder.parse(new File("src/august/bao0826/resource/108_class1.xml"));
 
                 //删除
                 Node department3 = document.getElementsByTagName("department").item(2);
@@ -65,7 +65,7 @@ public class TextXML2 {
                 try {
                     Transformer transformer = transformerFactory.newTransformer();
                     DOMSource domSource = new DOMSource(document);
-                    StreamResult streamResult = new StreamResult(new File("resource/108_class1.xml"));
+                    StreamResult streamResult = new StreamResult(new File("src/august/bao0826/resource/108_class1.xml"));
                     try {
                         transformer.transform(domSource, streamResult);
                     } catch (TransformerException e) {
