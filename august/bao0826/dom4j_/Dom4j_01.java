@@ -1,17 +1,14 @@
 package august.bao0826.dom4j_;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.AttrDecls;
+import org.dom4j.Attribute;
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.junit.Test;
 
-import javax.xml.stream.events.Attribute;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
+;import java.io.InputStream;
 import java.util.List;
+
 
 /**
  * @ClassName Dom4j_01
