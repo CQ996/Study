@@ -8,7 +8,7 @@ package august.bao0827.reflect_class;
  * @Version 1.0
  */
 public class Student {
-    public Student() {
+    private Student() {
         System.out.println("我是无参构造器");
     }
 
