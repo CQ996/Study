@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
 需求：定义XML文件
 3个部门（财务部：编号1；研发部：编号2；市场部：编号3）
 财务部：2名员工
@@ -7,17 +6,16 @@
 市场部：1名员工
 
 所有员工都有姓名、工资
--->
-<company>
-    <department no="1" name="财务部">
+--><company>
+    <department name="财务部" no="1">
         <employee>
             <name>宋江</name>
             <salary>100</salary>
             <name>卢俊义</name>
             <salary>200</salary>
         </employee>
-    </department>
-    <department no="2" name="研发部">
+    <employee><name>潘巧莲</name><salary>888</salary></employee></department>
+    <department name="研发部" no="2">
         <employee>
             <name>吴用</name>
             <salary>300</salary>
@@ -25,7 +23,7 @@
             <salary>400</salary>
         </employee>
     </department>
-    <department no="3" name="市场部">
+    <department name="市场部" no="3">
         <employee>
             <name>潘金莲</name>
             <salary>500</salary>
