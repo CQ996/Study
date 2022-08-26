@@ -1,14 +1,17 @@
 package august.bao0826.dom4j_;
 
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.AttrDecls;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.junit.Test;
 
+import javax.xml.stream.events.Attribute;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.List;
 
 /**
  * @ClassName Dom4j_01
@@ -31,6 +34,30 @@ public class Dom4j_01 {
         //3.获取根元素对象
         Element root=document.getRootElement();
         System.out.println(root.getName());
+        //获取根元素下的全部子元素
+        List<Element> somEles=root.elements();
+        for (Element somEle : somEles) {
+            System.out.println(somEle);
+        }
+        //获取某个子元素
+        Element sj=root.element("书");
+        System.out.println(sj.getName());
+        //获取第一个子元素
+        Element contact =root.element("书");
+        //获取子元素文本
+        System.out.println(contact.elementText("书名"));
+        //去掉前后空格
+        System.out.println(contact.elementTextTrim("书名"));
+        //根据元素获取属性值
+        Attribute idAttr= (Attribute) contact.attribute("id");
+        System.out.println(idAttr.getName()+"--->"+ idAttr.getValue());
+        //直接提取属性值
+        System.out.println(contact.attributeValue("id"));
+
+        //获取当前元素下的子元素下的对象
+        Element zz=contact.element("作者");
+        System.out.println(zz.getText());
+
 
     }
 }

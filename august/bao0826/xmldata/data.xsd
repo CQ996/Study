@@ -7,7 +7,16 @@
             <sequence maxOccurs="unbounded">
                 <element name="书">
                     <complexType>
-                        <sequence>
+                        <sequence id="武侠小说">
+                            <element name="书名" type='string'/>
+                            <element name="作者" type='string'/>
+                            <element name="售价" type='double'/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="片">
+                    <complexType>
+                        <sequence id="艳情小说">
                             <element name="书名" type='string'/>
                             <element name="作者" type='string'/>
                             <element name="售价" type='double'/>
