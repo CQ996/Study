@@ -21,7 +21,7 @@ public class MethodDemo01 {
         Method[] methods = c.getDeclaredMethods();
         //c.遍历全部方法
         for (Method method : methods) {
-            System.out.println(method.getName() + "返回值类型：" + method.getReturnType() + "参数数量：" + method.getParameterCount());
+            System.out.println(method.getName() + "返回的方法类型：" + method.getReturnType() + "参数数量：" + method.getParameterCount());
         }
     }
 
