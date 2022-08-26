@@ -15,8 +15,8 @@ public class Test {
         Class c1=Student.class;
         System.out.println(c1);
         //3.对象.getClass()获取对象对应类的Class对象
-        Student s=new Student();
-        Class c2=s.getClass();
-        System.out.println(c2);
+//        Student s=new Student();
+//        Class c2=s.getClass();
+//        System.out.println(c2);
     }
 }
