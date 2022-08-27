@@ -1,4 +1,4 @@
-package august.bao0828.proxy;
+package august.bao0828.proxy_;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
