@@ -32,10 +32,10 @@ public class MethodDemo01 {
         Class c1 = Dog.class;
 
         //b.提取单个方法对象
-        Method m = c1.getDeclaredMethod("eat");
+        Method m = c1.getDeclaredMethod("run");
         Method m2 = c1.getDeclaredMethod("eat", String.class);
 
-        m.setAccessible(true);
+        //m.setAccessible(true);
         m2.setAccessible(true);
 
         //c.触发方法的执行
