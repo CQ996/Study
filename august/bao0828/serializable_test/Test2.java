@@ -23,6 +23,7 @@ public class Test2 {
         //4.读取读写,调用对象字节输入流的反序列化方法
         Object o = ois.readObject();
         User o1= (User) o;
+        //User o2 = (User) ois.readObject();
         System.out.println(o1);
         //5.关闭资源
         ois.close();

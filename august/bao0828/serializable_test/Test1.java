@@ -20,6 +20,7 @@ public class Test1 {
         //4.往序列化流中传输Java对象
         oos.writeObject(u1);
         //oos.writeInt();支持存储任意基本类型，Serializable不用标识，可以直接使用
+        oos.flush();
 
         //5.关闭释放内存资源
         oos.close();
