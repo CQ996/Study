@@ -7,11 +7,11 @@ package august.bao0826.dom4j_;
  * @Date 2022/8/26 14:16
  * @Version 1.0
  */
-public class Contact {
-    public Contact() {
+public class Student {
+    public Student() {
     }
 
-    public Contact(String name, int id, boolean vip, char gender, String email) {
+    public Student(String name, int id, boolean vip, char gender, String email) {
         this.name = name;
         this.id = id;
         this.vip = vip;
