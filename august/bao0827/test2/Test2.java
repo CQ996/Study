@@ -16,7 +16,7 @@ public class Test2 {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
 
         //解析获取未知类型的类文件后:
-        String cName = "src/august/bao0827/test2/Teacher.java";
+        String cName = "august.bao0827.test2.Teacher";
         Class c1 = Class.forName(cName); //  c1对象:  即为 Teacher.class.
 
         //使用类文件对象:

@@ -1,7 +1,5 @@
 package august.bao0827.reflect_framework;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.Field;
@@ -20,7 +18,7 @@ public class MybatisUtil {
      */
     public static void save(Object obj) {
         try {
-            PrintStream ps = new PrintStream(new FileOutputStream("src/august/bao0827/reflect_framework/data.txt",
+            PrintStream ps = new PrintStream(new FileOutputStream("august/bao0827/reflect_framework/data.txt",
                     true));
             //对象.class()==>类.getClass()
             Class c=obj.getClass();

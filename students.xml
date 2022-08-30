@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Student>
+    <s1 Class="august.bao0829.demo01.Student">
+        <id>001</id>
+        <name>小明</name>
+    </s1>
+    <s1 Class="august.bao0829.demo01.Student">
+        <id>002</id>
+        <name>小丽</name>
+    </s1>
+</Student>

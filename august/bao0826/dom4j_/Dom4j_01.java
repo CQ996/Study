@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class Dom4j_01 {
     @Test
-        public void parseXMLData() throws Exception {
+    public void parseXMLData() throws Exception {
         //1.创建一个Dom4j的解析器对象，代表整个dom4j框架
         SAXReader saxReader=new SAXReader();
         //2.把XML文件加载到内存中成为一个Document文档对象

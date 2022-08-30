@@ -20,7 +20,7 @@ public class Test1 {
         //Teacher t1 = new Teacher();
         //Class c2 = t1.getClass(); //情况2: 根据对象实例获取所属类型文件.
 
-        String className = "src/august/bao0827/test2/Teacher.java";
+        String className = "august/bao0827/test2/Teacher.java";
         Class c3 = Class.forName(className);//情况3:推荐使用 根据指定类完整名称解析类文件.
 
         //System.out.println(c1+" - " + c2+" - " + c3);
