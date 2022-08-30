@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root Class="com.hfxt.test.Student"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://com.hfxt.test.Student ">
+    <Student id="1">
+        <xh>001</xh>
+        <name>小明</name>
+    </Student>
+    <Student id="2">
+        <xh>002</xh>
+        <name>小丽</name>
+    </Student>
+</root>
