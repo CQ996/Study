@@ -2,7 +2,6 @@ package august.bao0827.reflect_field;
 
 import org.junit.Test;
 
-import java.io.File;
 import java.lang.reflect.Field;
 
 /**

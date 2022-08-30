@@ -1,4 +1,4 @@
-package august.bao0829.demo01;
+package august.bao0829.demo02;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
@@ -7,7 +7,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 
@@ -22,7 +21,7 @@ public class Dom4j001 {
     public static void main(String[] args) throws Exception {
         Student st = null;
                 //1.反射，得到类的引用
-        Class student=Class.forName("august.bao0829.demo01.Student");
+        Class student=Class.forName("august.bao0829.demo02.Student");
         //通过类的引用，得到类的对象
         Object stuInstance = student.newInstance();
         //创建一个list 来放多个student的对象
@@ -77,7 +76,7 @@ public class Dom4j001 {
         //1.创建java对象
         st = new Student(Integer.valueOf(array[0]),array[1]);
         //2.指定存储位置
-        File f1= new File("src/august/bao0829/demo01/3.txt");
+        File f1= new File("src/august/bao0829/demo02/3.txt");
         //3.构建序列化流通道（对象-->字节）
         ObjectOutputStream oos1=new ObjectOutputStream(new FileOutputStream(f1));
         //4.往序列化流中传输Java对象
@@ -87,7 +86,7 @@ public class Dom4j001 {
         //1.创建java对象
         st = new Student(Integer.valueOf(array[2]),array[3]);
         //2.指定存储位置
-        File f2= new File("src/august/bao0829/demo01/4.txt");
+        File f2= new File("src/august/bao0829/demo02/4.txt");
         //3.构建序列化流通道（对象-->字节）
         ObjectOutputStream oos2=new ObjectOutputStream(new FileOutputStream(f2));
         //4.往序列化流中传输Java对象
