@@ -37,7 +37,6 @@ public class Dom4j001 {
         //利用Element中的方法，获取根节点下的全部子节点.返回一个List<element>
         List<Element> elements = rootElement.elements();
 
-        //利用Element中的方法，获取子 节点中的属性（StudentData中的属性为id）
         //1.遍历list,获得每个元素
         for (Element element : elements) {
             System.out.println("---------------------------------");
@@ -68,9 +67,9 @@ public class Dom4j001 {
         //反射进行实例化两个学生对象: 将学号和姓名存储到对象中.最后实现学生信息打印输出.
         //实例化: 先获取带参构造方法,  在执行构造方法创建对象.
         Constructor[] cons = c.getConstructors();
-        Constructor con1 = c.getConstructor(int.class, String.class); //con1表示类文件中的带Integer,String参数的构造方法.
+        Constructor con1 = c.getConstructor(int.class, String.class); //con1表示类文件中的带int,String参数的构造方法.
         //序列化对象1
-        //1.创建java对象
+        //1.通过反射实例化对象
         st = (Student)con1.newInstance(Integer.valueOf(array[0]), array[1]);
         //2.指定存储位置
         File f1= new File("src/august/bao0829/demo02/3.txt");
@@ -81,7 +80,7 @@ public class Dom4j001 {
         oos1.close();
 
         //序列化对象2
-        //1.创建java对象
+        //1.通过反射实例化对象
         st = (Student)con1.newInstance(Integer.valueOf(array[2]), array[3]);
         //2.指定存储位置
         File f2= new File("src/august/bao0829/demo02/4.txt");
