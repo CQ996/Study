@@ -45,7 +45,7 @@ public class Test {
             // getText()获取子元素的文本内容
             int idText = Integer.parseInt(idElement.getText());
             // attributeValue()直接获取元素的属性值
-            System.out.println(new Student(idText,nameText));
+            System.out.println(new Student(idText,nameText)+"=======");
 
             //反射实例化对象:
             Class aClass1 = Class.forName(aClass);
