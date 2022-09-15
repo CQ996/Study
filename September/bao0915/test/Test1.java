@@ -6,7 +6,7 @@ import java.sql.*;
 
 /**
  * @ClassName Test1
- * @Description 绑定参数方式：占位符绑定
+ * @Description 绑定参数方式：占位符绑定.
  * @Author CQ
  * @Date 2022/9/15 14:34
  * @Version 1.0
